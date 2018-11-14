@@ -134,5 +134,6 @@ tr.timeline.wait > td:before {
 }
 
 #border-table {
-  border-bottom: 1px solid #bebebe !important;
+  border-top: 2px solid #bebebe;
+  border-bottom: 2px solid #bebebe;
 }
