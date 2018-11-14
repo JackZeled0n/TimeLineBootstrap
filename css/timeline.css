@@ -10,7 +10,7 @@ tr.timeline:before {
   position: absolute;
   left: 50px;
   width: 2px;
-  height: calc(3% + 70px);
+  height: 100%;
   z-index: 400;
   margin-top: 2% !important;
 }
