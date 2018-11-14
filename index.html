@@ -2,138 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Timeline</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Timeline</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/timeline.css">
-
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#b91d47" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/timeline.css" />
 </head>
 
-<body class="bg-light">
-
-    <div class="row justify-content-lg-center mt-4">
-
-        <div class="col-lg-8">
-
-            <div class="card">
-
-                <div class="card-header">
-                    <h4>Tracking</h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-borderless text-center" id="tabla">
-                                <thead id="border-table">
-                                    <tr>
-                                        <th></th>
-                                        <th>
-                                            Estado
-                                        </th>
-                                        <th>
-                                            Fecha
-                                        </th>
-                                        <th>
-                                            Ubicación
-                                        </th>
-                                        <th>
-                                            Duración de tarea
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="timeline ok first" id="tl-1">
-                                        <td class="font-weight-bold" width="25%">
-                                            Entregado
-                                        </td>
-                                        <td class="font-weight-bold" width="25%">
-                                            21/07/2018 11:13
-                                        </td>
-                                        <td class="font-weight-bold" width="25%">
-                                            MANAGUA
-                                        </td>
-                                        <td class="font-weight-bold" width="25%">
-                                            10 HRS
-                                        </td>
-                                    </tr>
-                                    <tr class="timeline wait" id="tl-2">
-                                        <td width="25%">
-                                            En Espera
-                                        </td>
-                                        <td width="25%">
-                                            21/07/2018 11:13
-                                        </td>
-                                        <td width="25%">
-                                            MANAGUA
-                                        </td>
-                                        <td width="25%">
-                                            5 HRS
-                                        </td>
-                                    </tr>
-                                    <tr class="timeline error" id="tl-3">
-                                        <td width="25%">
-                                            Perdido
-                                        </td>
-                                        <td width="25%">
-                                            21/07/2018 11:13
-                                        </td>
-                                        <td width="25%">
-                                            MANAGUA
-                                        </td>
-                                        <td width="25%">
-                                            5 HRS
-                                        </td>
-                                    </tr>
-                                    <tr class="timeline error" id="tl-4">
-                                        <td width="25%">
-                                            Perdido
-                                        </td>
-                                        <td width="25%">
-                                            21/07/2018 11:13
-                                        </td>
-                                        <td width="25%">
-                                            MANAGUA
-                                        </td>
-                                        <td width="25%">
-                                            5 HRS
-                                        </td>
-                                    </tr>
-                                    <tr class="timeline error last" id="tl-5">
-                                        <td width="25%">
-                                            Perdido
-                                        </td>
-                                        <td width="25%">
-                                            21/07/2018 11:13
-                                        </td>
-                                        <td width="25%">
-                                            MANAGUA
-                                        </td>
-                                        <td width="25%">
-                                            5 HRS
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body class="bg-secondary">
+  <div class="row justify-content-lg-center mt-4">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header">
+          <h4>Progreso</h4>
         </div>
+        <div class="card-body">
+          <div class="container-fluid">
+            <div class="table-responsive">
+              <table class="table table-hover table-borderless text-center" id="tabla">
+                <thead id="border-table">
+                  <tr>
+                    <th></th>
+                    <th class="pl-5">Estado</th>
+                    <th>Fecha</th>
+                    <th>Ubicación</th>
+                    <th>Duración de tarea</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="timeline ok first" id="tl-1">
+                    <td class="font-weight-bold pl-5" width="25%">
+                      Entregado
+                    </td>
+                    <td class="font-weight-bold" width="25%">
+                      21/07/2018 11:13
+                    </td>
+                    <td class="font-weight-bold" width="25%">MANAGUA</td>
+                    <td class="font-weight-bold" width="25%">10 HRS</td>
+                  </tr>
+                  <tr class="timeline wait" id="tl-2">
+                    <td class="pl-5" width="25%">En Espera</td>
+                    <td width="25%">21/07/2018 11:13</td>
+                    <td width="25%">MANAGUA</td>
+                    <td width="25%">5 HRS</td>
+                  </tr>
+                  <tr class="timeline ok" id="tl-3">
+                    <td class="pl-5" width="25%">Perdido</td>
+                    <td width="25%">21/07/2018 11:13</td>
+                    <td width="25%">MANAGUA</td>
+                    <td width="25%">5 HRS</td>
+                  </tr>
+                  <tr class="timeline ok" id="tl-4">
+                    <td class="pl-5" width="25%">Perdido</td>
+                    <td width="25%">21/07/2018 11:13</td>
+                    <td width="25%">MANAGUA</td>
+                    <td width="25%">5 HRS</td>
+                  </tr>
+                  <tr class="timeline ok last" id="tl-5">
+                    <td class="pl-5" width="25%">Perdido</td>
+                    <td width="25%">21/07/2018 11:13</td>
+                    <td width="25%">MANAGUA</td>
+                    <td width="25%">5 HRS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 </body>
 
 <!-- Script de funcionalidad -->
