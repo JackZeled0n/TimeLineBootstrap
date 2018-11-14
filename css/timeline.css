@@ -15,6 +15,18 @@ tr.timeline:before {
     margin-top: 2% !important;
 }
 
+tr.timeline.last:before {
+    content: ' ';
+    background: #bebebe;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 0%;
+    z-index: 400;
+    margin-top: 2% !important;
+}
+
 tr.timeline>td {
     margin: 20px 0;
     padding-left: 20px;
@@ -64,7 +76,7 @@ tr.timeline.espera>td:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid rgba(124, 179, 66, 0.4);
+    border: 3px solid rgba(0, 172, 193, 0.4);
     left: 15px;
     width: 30px;
     height: 30px;
