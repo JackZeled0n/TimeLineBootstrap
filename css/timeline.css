@@ -10,7 +10,7 @@ tr.timeline:before {
   position: absolute;
   left: 50px;
   width: 2px;
-  height: calc(3% + 45px);
+  height: calc(3% + 70px);
   z-index: 400;
   margin-top: 2% !important;
 }
@@ -22,9 +22,8 @@ tr.timeline.last:before {
   position: absolute;
   left: 50px;
   width: 2px;
-  height: 0%;
+  height: 0% !important;
   z-index: 400;
-  margin-top: 2% !important;
 }
 
 tr.timeline > td {
